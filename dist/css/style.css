@@ -171,7 +171,6 @@ html.overflow {
 
 ._title {
   font-weight: 700;
-
   line-height: 89.2px;
   color: rgba(86, 109, 238, 0.8);
   -webkit-text-stroke: 1px #566dee;
@@ -181,14 +180,14 @@ html.overflow {
 ._title._white {
   color: hsl(var(--clr-white));
 }
-@media (min-width: 26.813em) {
+@media (mmin-width: 30.813em) {
   ._title {
-    font-size: 2.625rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 47.99875em) {
   ._title {
-    font-size: 3rem;
+    font-size: 2.813rem;
   }
 }
 @media (min-width: 62em) {
@@ -200,7 +199,7 @@ html.overflow {
 }
 @media (min-width: 80em) {
   ._title {
-    font-size: 2.813;
+    font-size: 2.813rem;
     line-height: 50.18px;
   }
 }
@@ -660,12 +659,24 @@ html.overflow {
 @media (min-width: 30.0625em) {
   .footer__copyright {
     font-size: 0.75rem;
+    padding-top: 8vh;
+  }
+}
+@media (max-width: 30.0625em) {
+  .footer__copyright {
+    font-size: 0.75rem;
+    padding-top: 4vh;
+  }
+}
+@media (min-width: 40.0625em) {
+  .footer__copyright {
+    padding-top: 24vh;
   }
 }
 @media (min-width: 62em) {
   .footer__copyright {
     font-size: 1rem;
-    padding-top: 13%;
+    padding-top: 24vh;
   }
 }
 @media (min-width: 80em) {
@@ -1124,7 +1135,7 @@ html.overflow {
 }
 @media (min-width: 101.875em) {
   .get__title:not(:last-child) {
-    margin-bottom: 7.1875rem;
+    margin-bottom: 5.7875rem;
   }
 }
 .get__inner {
@@ -1158,6 +1169,7 @@ html.overflow {
   font-weight: 700;
   /* filter: drop-shadow(8px 7px 10px rgba(144, 248, 255, 0.8235294118)); */
   line-height: 1.12;
+  letter-spacing: -0.06em;
 }
 .get__text p:not(:last-child) {
   margin-bottom: 1.5625rem;
@@ -1312,7 +1324,7 @@ html.overflow {
 }
 @media (max-width: 101.875em) {
   .activities__body {
-    row-gap: 1.25rem;
+    row-gap: 0.25rem;
   }
 }
 @media (max-width: 80em) {
@@ -1775,7 +1787,7 @@ html.overflow {
     max-width: 55.4953vw;
   }
 }
-.app__tablet:not(:last-child) {
+/* .app__tablet:not(:last-child) {
   margin-bottom: 6.25rem;
 }
 @media (max-width: 101.875em) {
@@ -1787,13 +1799,14 @@ html.overflow {
   .app__tablet:not(:last-child) {
     margin-bottom: 3.75rem;
   }
-}
+} */
 .app__images {
   position: relative;
   z-index: 10;
   display: flex;
   align-items: center;
   column-gap: 10rem;
+  justify-content: center;
 }
 @media (max-width: 80em) {
   .app__images {
@@ -2249,6 +2262,11 @@ html.overflow {
 .roadmap__subtitle:not(:last-child) {
   margin-bottom: 1.0625rem;
 }
+@media (min-width: 30.0625em) {
+  .roadmap__subtitle {
+    font-size: 0.875rem;
+  }
+}
 @media (max-width: 30.0625em) {
   .roadmap__subtitle {
     font-size: 0.875rem;
@@ -2261,7 +2279,7 @@ html.overflow {
 } */
 @media (min-width: 62em) {
   .roadmap__subtitle {
-    font-size: 0.875rem;
+    font-size: 1.563rem;
   }
   .roadmap__subtitle:not(:last-child) {
     margin-bottom: 1.5625rem;
@@ -2277,42 +2295,52 @@ html.overflow {
 }
 @media (min-width: 101.875em) {
   .roadmap__subtitle {
-    font-size: 3.125rem;
+    font-size: 2rem;
   }
-  .roadmap__subtitle:not(:last-child) {
+  /* .roadmap__subtitle:not(:last-child) {
     margin-bottom: 4.75rem;
-  }
+  } */
 }
 .roadmap__item {
   filter: drop-shadow(8px 7px 41px #90f7ff);
   list-style: disc;
   font-weight: 500;
-  font-size: 1.25em;
-  line-height: 18px;
+  /* row-gap: 10px; */
+  line-height: 135%;
   color: #0052aa;
   -webkit-text-stroke: 0.3px #0052aa;
 }
-@media (max-width: 26.75em) {
+@media (max-width: 30.75em) {
   .roadmap__item {
     font-weight: 400;
     font-size: 0.625rem;
+    max-width: 6.875rem;
   }
 }
-
-@media (max-width: 47.99875em) {
+@media (min-width: 30.75em) {
   .roadmap__item {
-    font-size: 1.125rem;
+    font-weight: 400;
+    font-size: 0.625rem;
+    max-width: 6.875rem;
+  }
+}
+@media (min-width: 47.99875em) {
+  .roadmap__item {
+    font-size: 0.875rem;
+    max-width: 8.875rem;
     font-weight: 500;
   }
 }
-@media (max-width: 80em) {
+@media (min-width: 80em) {
   .roadmap__item {
     font-size: 0.875rem;
+    max-width: 8.875rem;
   }
 }
 @media (min-width: 101.875em) {
   .roadmap__item {
     font-size: 1.25rem;
+    max-width: 14.875rem;
   }
 }
 
