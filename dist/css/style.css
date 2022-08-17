@@ -474,7 +474,13 @@ html.overflow {
   z-index: 1;
   position: relative;
   width: 100%;
-  min-height: 10vh;
+  /* min-height: 10vh; */
+  min-height: 20vh;
+}
+@media (max-width: 100em) {
+  .footer__bottom {
+    min-height: 10vh;
+  }
 }
 @media (max-width: 30.0625em) {
   .footer__bottom {
@@ -659,29 +665,30 @@ html.overflow {
 @media (min-width: 30.0625em) {
   .footer__copyright {
     font-size: 0.75rem;
-    padding-top: 8vh;
+    padding-top: 5vh;
   }
 }
 @media (max-width: 30.0625em) {
   .footer__copyright {
     font-size: 0.75rem;
-    padding-top: 4vh;
+    padding-top: 1vh;
   }
 }
 @media (min-width: 40.0625em) {
   .footer__copyright {
-    padding-top: 24vh;
+    padding-top: 6vh;
   }
 }
 @media (min-width: 62em) {
   .footer__copyright {
     font-size: 1rem;
-    padding-top: 24vh;
+    padding-top: 22vh;
   }
 }
 @media (min-width: 80em) {
   .footer__copyright {
     font-size: 1.25rem;
+    padding-top: 20vh;
   }
 }
 
@@ -1182,7 +1189,14 @@ html.overflow {
     margin-bottom: 0.9375rem;
   }
 }
+
 @media (max-width: 47.99875em) {
+  .get__text {
+    max-width: 30.3125rem;
+    /* max-width: 20.3125rem; */
+  }
+}
+@media (max-width: 36em) {
   .get__text {
     max-width: 20.3125rem;
   }
@@ -1271,14 +1285,21 @@ html.overflow {
     max-width: 34.375rem;
   }
 }
+
 @media (max-width: 47.99875em) {
   .activities p {
-    max-width: 20.3125rem;
+    max-width: 30.3125rem;
   }
   .activities p:not(:last-child) {
     margin-bottom: 2.1875rem;
   }
 }
+@media (max-width: 36em) {
+  .activities p {
+    max-width: 20.3125rem;
+  }
+}
+
 @media (min-width: 80em) {
   .activities {
     padding-top: 4rem;
@@ -1751,7 +1772,7 @@ html.overflow {
 }
 .app__title {
   position: relative;
-  z-index: 3;
+  z-index: 6;
   color: rgba(255, 255, 255, 0.8);
   -webkit-text-stroke: 1px #fff;
 }
@@ -1769,7 +1790,9 @@ html.overflow {
   z-index: 10;
 }
 .app__tablet img {
-  max-width: 100%;
+  /* max-width: 100%; */
+  /* position: absolute; */
+  max-width: 400px;
 }
 @media (max-width: 101.875em) {
   .app__tablet {
@@ -2149,7 +2172,7 @@ html.overflow {
 }
 @media (max-width: 80em) {
   .roadmap__text-box-3 {
-    grid-column: 14/19;
+    grid-column: 15/19;
   }
 }
 @media (max-width: 62em) {
@@ -2253,6 +2276,7 @@ html.overflow {
   }
 }
 .roadmap__subtitle {
+  margin-left: -10px;
   filter: drop-shadow(8px 7px 41px #90f7ff);
   font-weight: 700;
   line-height: 35.68px;
@@ -2260,7 +2284,8 @@ html.overflow {
   -webkit-text-stroke: 0.5px #0052aa;
 }
 .roadmap__subtitle:not(:last-child) {
-  margin-bottom: 1.0625rem;
+  /* margin-bottom: 1.0625rem; */
+  margin-bottom: 0.0625rem;
 }
 @media (min-width: 30.0625em) {
   .roadmap__subtitle {
@@ -2282,7 +2307,8 @@ html.overflow {
     font-size: 1.563rem;
   }
   .roadmap__subtitle:not(:last-child) {
-    margin-bottom: 1.5625rem;
+    /* margin-bottom: 1.5625rem; */
+    margin-bottom: 0.9625rem;
   }
 }
 @media (min-width: 80em) {
@@ -2345,6 +2371,7 @@ html.overflow {
 }
 
 .team {
+  display: none;
   padding-top: 2.375rem;
   padding-bottom: 2.375rem;
 }
@@ -2368,8 +2395,10 @@ html.overflow {
 }
 @media (min-width: 101.875em) {
   .team {
-    padding-top: 5rem;
-    padding-bottom: 8.375rem;
+    padding-top: 10rem;
+    padding-bottom: 6.675rem;
+    /* padding-top: 5rem;
+    padding-bottom: 8.375rem; */
   }
 }
 @media (max-width: 30.0625em) {
@@ -2448,9 +2477,11 @@ html.overflow {
   position: relative;
   padding: 5.625rem 1.125rem 1.25rem;
   min-width: 14.375rem;
+  /* min-height: 14.375rem; */
   border: 1px solid #ffffff;
   border-radius: 15px;
 }
+
 @media (max-width: 47.99875em) {
   .team__card {
     min-width: 10rem;
@@ -2644,30 +2675,36 @@ html.overflow {
 
 .partners {
   padding-top: 2.25rem;
-  padding-bottom: 2.375rem;
+  /* padding-bottom: 2.375rem; */
+  padding-bottom: 4.375rem;
 }
 @media (min-width: 47.99875em) {
   .partners {
     padding-top: 2.8125rem;
-    padding-bottom: 2.8125rem;
+    /* padding-bottom: 2.8125rem; */
+    padding-bottom: 4.8125rem;
   }
 }
 @media (min-width: 62em) {
   .partners {
     padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
+    /* padding-bottom: 3.125rem; */
+    padding-bottom: 5.125rem;
   }
 }
 @media (min-width: 80em) {
   .partners {
     padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    /* padding-bottom: 3.75rem; */
+    padding-bottom: 6.75rem;
   }
 }
 @media (min-width: 101.875em) {
   .partners {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+    padding-top: 5.75rem;
+    padding-bottom: 8.75rem;
   }
 }
 .partners__title:not(:last-child) {
