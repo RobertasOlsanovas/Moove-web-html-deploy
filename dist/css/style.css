@@ -423,9 +423,14 @@ html.overflow {
   overflow: hidden;
   min-height: 55vh;
 }
-@media (min-width: 91.875em) {
+@media (min-width: 118.125em) {
   .footer {
-    min-height: 80vh;
+    min-height: 100vh;
+  }
+}
+@media (min-width: 90em) {
+  .footer {
+    min-height: 90vh;
   }
 }
 @media (max-width: 62em) {
@@ -458,9 +463,19 @@ html.overflow {
   width: 100%;
   min-height: 45vh;
 }
+@media (min-width: 118.125em) {
+  .footer__top {
+    min-height: 80vh;
+  }
+}
+@media (min-width: 90em) {
+  .footer__top {
+    min-height: 70vh;
+  }
+}
 @media (max-width: 62em) {
   .footer__top {
-    min-height: 20vh;
+    min-height: 35vh;
   }
 }
 @media (max-width: 30.0625em) {
@@ -481,20 +496,36 @@ html.overflow {
   width: 100%;
   min-height: 10vh;
 }
-/* /* @media (max-width: 100rem) {
+@media (min-width: 118.125em) {
   .footer__bottom {
-    height: 100%;
+    min-height: 30vh;
   }
-} */
-/* @media (min-width: 91.875em) {
+}
+@media (min-width: 90em) {
   .footer__bottom {
-    max-height: 20vh;
+    min-height: 20vh;
+  }
+}
+@media (min-width: 80em) {
+  .footer__bottom {
+    min-height: 20vh;
+  }
+}
+@media (min-width: 51.438em) {
+  .footer__bottom {
+    min-height: 20vh;
+  }
+}
+
+/* @media (min-width: 41.438em) {
+  .footer__bottom {
+    min-height: 10vh;
   }
 } */
 
-/* @media (max-width: 30.0625rem) {
+/* @media (min-width: 30.0625rem) {
   .footer__bottom {
-    min-height: 5vh;
+    min-height: 10vh;
   }
 } */
 .footer__bottom > img {
@@ -542,7 +573,7 @@ html.overflow {
   z-index: 2;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -698,7 +729,7 @@ html.overflow {
 @media (min-width: 80em) {
   .footer__copyright {
     font-size: 1.25rem;
-    padding-top: 20vh;
+    padding-top: 40vh;
   }
 }
 
@@ -2134,7 +2165,7 @@ html.overflow {
 }
 @media (max-width: 40em) {
   .roadmap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 0;
   }
 }
 @media (min-width: 62em) {
@@ -2142,7 +2173,7 @@ html.overflow {
     padding-bottom: 3.75rem;
   }
 }
-@media (max-width: 80rem) {
+@media (min-width: 80rem) {
   .roadmap {
     padding-bottom: 2.7rem;
     padding-top: 1.7rem;
@@ -2196,12 +2227,12 @@ html.overflow {
     grid-template-rows: repeat(8, 3.75rem);
   }
 }
-/* @media (max-width: 62em) {
+@media (max-width: 61.875em) {
   .roadmap__body {
-    grid-template-rows: repeat(8, 3.75rem);
+    grid-template-rows: repeat(6, 3.75rem);
   }
 }
-@media (max-width: 47.99875em) {
+/* @media (max-width: 47.99875em) {
   .roadmap__body {
     grid-template-rows: repeat(8, 3.75rem);
   }
@@ -2209,7 +2240,8 @@ html.overflow {
 @media (max-width: 40em) {
   .roadmap__body {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 7.5rem 1fr;
+    /* grid-template-rows: 1fr 7.5rem 1fr; */
+    grid-template-rows: 7.5rem 1fr;
     column-gap: 2.625rem;
   }
 }
@@ -2370,6 +2402,7 @@ html.overflow {
     position: static;
     align-self: center;
     height: auto;
+    margin-top: 5vw;
   }
 }
 .roadmap__subtitle {
@@ -2771,11 +2804,15 @@ html.overflow {
 }
 
 .partners {
-  padding-top: 2.25rem;
+  /* padding-top: 2.25rem; */
   /* padding-bottom: 2.375rem; */
   padding-bottom: 4.375rem;
 }
-
+@media (min-width: 40em) {
+  .partners {
+    padding-top: 0rem;
+  }
+}
 /* @media (min-width: 62em) {
   .partners {
     padding-top: 10.125rem;
