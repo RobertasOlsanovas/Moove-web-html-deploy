@@ -442,9 +442,14 @@ html.overflow {
     min-height: 90vh;
   }
 }
+@media (max-width: 80em) {
+  .footer {
+    min-height: 60vh;
+  }
+}
 @media (max-width: 62em) {
   .footer {
-    min-height: 30vh;
+    min-height: 40vh;
   }
 }
 @media (max-width: 30.0625em) {
@@ -470,7 +475,7 @@ html.overflow {
   z-index: 1;
   position: relative;
   width: 100%;
-  min-height: 45vh;
+  min-height: 50vh;
 }
 @media (min-width: 118.125em) {
   .footer__top {
@@ -479,12 +484,12 @@ html.overflow {
 }
 @media (min-width: 90em) {
   .footer__top {
-    min-height: 70vh;
+    min-height: 75vh;
   }
 }
 @media (max-width: 62em) {
   .footer__top {
-    min-height: 25vh;
+    min-height: 30vh;
   }
 }
 @media (max-width: 30.0625em) {
@@ -505,7 +510,11 @@ html.overflow {
   width: 100%;
   min-height: 5vh;
 }
-
+@media (min-width: 30.0625em) {
+  .footer__bottom {
+    min-height: 10vh;
+  }
+}
 @media (min-width: 51.438em) {
   .footer__bottom {
     min-height: 10vh;
@@ -513,7 +522,7 @@ html.overflow {
 }
 @media (min-width: 80em) {
   .footer__bottom {
-    min-height: 10vh;
+    min-height: 15vh;
   }
 }
 @media (min-width: 90em) {
@@ -1877,8 +1886,10 @@ html.overflow {
 }
 @media (min-width: 62em) {
   .app__title {
-    color: rgba(241, 239, 255, 0.95);
-    -webkit-text-stroke: 3px #fff;
+    /* color: rgba(241, 239, 255, 0.95);
+    -webkit-text-stroke: 3px #fff; */
+    color: rgba(86, 109, 238, 0.8);
+    -webkit-text-stroke: 1px #566dee;
   }
 }
 .app__tablet {
@@ -2892,7 +2903,7 @@ html.overflow {
   z-index: 1;
   grid-template-columns: repeat(4, minmax(9.6875rem, 1fr));
   place-items: center;
-  column-gap: 10vw;
+  /* column-gap: 10vw; */
 }
 @supports (
   row-gap: clamp(1.25rem, 0.715648855rem + 2.6717557252vw, 3.4375rem)
@@ -2910,13 +2921,13 @@ html.overflow {
 }
 @media (max-width: 80em) {
   .partners__body {
-    grid-template-columns: repeat(4, minmax(5rem, 1fr));
-    column-gap: 1.875rem;
+    grid-template-columns: repeat(4, minmax(6rem, 1fr));
+    /* column-gap: 1.875rem; */
   }
 }
 @media (max-width: 47.99875em) {
   .partners__body {
-    grid-template-columns: repeat(4, 5.625rem);
+    /* grid-template-columns: repeat(4, 6.625rem); */
     justify-content: center;
     column-gap: 1.125rem;
     row-gap: 2.5rem;
@@ -2924,25 +2935,97 @@ html.overflow {
 }
 @media (max-width: 30.0625em) {
   .partners__body {
-    grid-template-columns: repeat(4, 3.9375rem);
+    grid-template-columns: repeat(4, 4.9375rem);
   }
 }
 .partners__image {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow: hidden;
   transition: all 0.3s ease;
   max-width: 100%;
-  max-height: 50%;
+  /* max-height: 50%; */
 }
-@media (any-hover: hover) {
+
+.partner__image1 {
+  height: 62px;
+}
+.partner__image2 {
+  height: 53px;
+}
+.partner__image3 {
+  height: 41px;
+  margin-top: -4px;
+}
+.partner__image4 {
+  height: 49px;
+}
+
+@media (max-width: 80em) {
+  .partner__image1 {
+    height: 45px;
+  }
+  .partner__image2 {
+    height: 39px;
+  }
+  .partner__image3 {
+    height: 28px;
+  }
+  .partner__image4 {
+    height: 36px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .partner__image1 {
+    height: 52px;
+  }
+  .partner__image2 {
+    height: 43px;
+  }
+  .partner__image3 {
+    height: 31px;
+  }
+  .partner__image4 {
+    height: 39px;
+  }
+}
+@media (max-width: 40.625em) {
+  .partner__image1 {
+    height: 40px;
+  }
+  .partner__image2 {
+    height: 30px;
+  }
+  .partner__image3 {
+    height: 23px;
+  }
+  .partner__image4 {
+    height: 31px;
+  }
+}
+@media (max-width: 30.0625em) {
+  .partner__image1 {
+    height: 28px;
+  }
+  .partner__image2 {
+    height: 25px;
+  }
+  .partner__image3 {
+    height: 16px;
+  }
+  .partner__image4 {
+    height: 25px;
+  }
+}
+
+/* @media (any-hover: hover) {
   .partners__image:hover {
     box-shadow: 2px 2px 15px hsl(var(--clr-violet) / 0.3);
     transform: translateY(-0.125rem);
   }
-}
+} */
 @media (max-width: 80em) {
   .partners__image {
-    max-width: 7.5rem;
+    max-width: 8.5rem;
   }
 }
 @media (max-width: 47.99875em) {
@@ -2950,11 +3033,11 @@ html.overflow {
     max-width: 100%;
   }
 }
-@media (max-width: 30.0625em) {
+/* @media (max-width: 30.0625em) {
   .partners__image {
     max-width: 3.9375rem;
   }
-}
+} */
 /* @media (max-width: 47.99875em) {
   .partners__image:last-child {
     display: none;
