@@ -179,9 +179,9 @@ html.overflow {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-._title._white {
+/* ._title._white {
   color: hsl(var(--clr-white));
-}
+} */
 @media (mmin-width: 30.813em) {
   ._title {
     font-size: 1.25rem;
@@ -320,7 +320,14 @@ html.overflow {
 }
 @media (max-width: 62em) {
   .menu__list {
+    font-weight: 700;
     flex-direction: column;
+    row-gap: 1.5vw;
+  }
+}
+@media (max-width: 35.375em) {
+  .menu__list {
+    row-gap: 2vw;
   }
 }
 .menu__link {
@@ -477,7 +484,7 @@ html.overflow {
 }
 @media (max-width: 62em) {
   .footer__top {
-    min-height: 35vh;
+    min-height: 25vh;
   }
 }
 @media (max-width: 30.0625em) {
@@ -496,11 +503,17 @@ html.overflow {
   z-index: 1;
   position: relative;
   width: 100%;
-  min-height: 10vh;
+  min-height: 5vh;
 }
-@media (min-width: 118.125em) {
+
+@media (min-width: 51.438em) {
   .footer__bottom {
-    min-height: 30vh;
+    min-height: 10vh;
+  }
+}
+@media (min-width: 80em) {
+  .footer__bottom {
+    min-height: 10vh;
   }
 }
 @media (min-width: 90em) {
@@ -508,12 +521,7 @@ html.overflow {
     min-height: 20vh;
   }
 }
-@media (min-width: 80em) {
-  .footer__bottom {
-    min-height: 20vh;
-  }
-}
-@media (min-width: 51.438em) {
+@media (min-width: 118.125em) {
   .footer__bottom {
     min-height: 20vh;
   }
@@ -536,6 +544,10 @@ html.overflow {
   height: 100%;
   bottom: 0;
   left: 0;
+}
+.footer__group {
+  max-height: 20%;
+  max-width: 90%;
 }
 .footer::before {
   content: '';
@@ -1220,7 +1232,7 @@ html.overflow {
   color: #2600bf;
   font-weight: 700;
   /* filter: drop-shadow(8px 7px 10px rgba(144, 248, 255, 0.8235294118)); */
-  line-height: 1.12;
+  line-height: 1.5;
   letter-spacing: -0.06em;
   text-align: justify;
 }
@@ -1322,7 +1334,7 @@ html.overflow {
   color: #2600bf;
   font-weight: 700;
   /* filter: drop-shadow(8px 7px 10px rgba(144, 248, 255, 0.8235294118)); */
-  line-height: 1.12;
+  line-height: 1.5;
 }
 .activities p:not(:last-child) {
   margin-bottom: 4.6875rem;
@@ -1840,8 +1852,10 @@ html.overflow {
 .app__title {
   position: relative;
   z-index: 6;
-  color: rgba(255, 255, 255, 0.8);
-  -webkit-text-stroke: 1px #fff;
+  color: rgba(86, 109, 238, 0.8);
+  -webkit-text-stroke: 1px #566dee;
+  /* color: rgba(255, 255, 255, 0.8);
+  -webkit-text-stroke: 1px #fff; */
 }
 .app__title:not(:last-child) {
   /* margin-bottom: 1.875em; */
@@ -2278,8 +2292,8 @@ html.overflow {
 @media (max-width: 40em) {
   .roadmap__text-box-1 {
     grid-row: 1;
-    grid-column: 1/2;
-    justify-self: end;
+    grid-column: 2/2;
+    /* justify-self: end; */
   }
 }
 .roadmap__text-box-2 {
@@ -2300,7 +2314,8 @@ html.overflow {
 @media (max-width: 40em) {
   .roadmap__text-box-2 {
     grid-row: 1;
-    grid-column: 2/2;
+    grid-column: 1/2;
+    justify-self: end;
   }
 }
 .roadmap__text-box-3 {
@@ -2468,7 +2483,6 @@ html.overflow {
   /* row-gap: 10px; */
   line-height: 135%;
   color: #0052aa;
-  -webkit-text-stroke: 0.3px #0052aa;
 }
 @media (max-width: 30.75em) {
   .roadmap__item {
@@ -2918,6 +2932,7 @@ html.overflow {
   overflow: hidden;
   transition: all 0.3s ease;
   max-width: 100%;
+  max-height: 50%;
 }
 @media (any-hover: hover) {
   .partners__image:hover {
