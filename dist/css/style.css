@@ -2000,7 +2000,8 @@ html.overflow {
     min-height: 8.8125rem;
   }
 } */
-.app__image-wrapper > img {
+.app__image-wrapper > img,
+.app__image-wrapper > video {
   position: absolute;
   z-index: 20;
   width: 100%;
@@ -2139,7 +2140,8 @@ html.overflow {
   }
 } */
 .app__image-box > img,
-.app__image-box > picture {
+.app__image-box > picture,
+.app__image-box > video {
   max-width: 100%;
   position: absolute;
   width: 95%;

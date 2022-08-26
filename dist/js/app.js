@@ -10526,6 +10526,10 @@
         },
         0
       );
+      // setTimeout(() => {
+      //   document.querySelector('._sportsman-4').src = 'img/main/04-1.png';
+      //   document.querySelector('._sportsman-5').src = 'img/main/05-1.png';
+      // }, 800);
       setTimeout(() => {
         document.querySelector('._sportsman-4').src = 'img/main/04-1.png';
         document.querySelector('._sportsman-5').src = 'img/main/05-1.png';
