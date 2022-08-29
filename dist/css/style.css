@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:regular,500,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Limelight:regular);
-@charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -417,6 +418,10 @@ html.overflow {
     bottom: calc(50% - 0.09375rem);
     transform: rotate(45deg);
   }
+}
+[data-src] {
+  min-width: 10px;
+  min-height: 10px;
 }
 
 .footer {
@@ -1740,6 +1745,11 @@ html.overflow {
   background-repeat: no-repeat;
   z-index: 4;
   top: 0;
+}
+@media (max-width: 29.375em) {
+  .app::before {
+    width: 120%;
+  }
 }
 .app__shape-outside {
   pointer-events: none;
