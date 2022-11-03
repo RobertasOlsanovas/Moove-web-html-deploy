@@ -1213,7 +1213,8 @@ html.overflow {
 }
 @media (min-width: 101.875em) {
   .get__title:not(:last-child) {
-    margin-bottom: 5.7875rem;
+    /* margin-bottom: 5.7875rem; */
+    margin-bottom: 4rem;
   }
 }
 .get__inner {
@@ -1251,7 +1252,8 @@ html.overflow {
   text-align: justify;
 }
 .get__text p:not(:last-child) {
-  margin-bottom: 1.5625rem;
+  /* margin-bottom: 1.5625rem; */
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 62em) {
   .get__text {
